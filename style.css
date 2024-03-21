@@ -1,0 +1,144 @@
+body {
+    margin: 0px;
+    
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: rgb(24,20,19);
+    background: linear-gradient(160deg, rgba(24,20,19,1) 30%, rgba(28,142,68,1) 100%, rgba(28,157,74,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.menu {
+    display: flex;
+    padding: 10px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.123);
+    color: white;
+}
+
+.menu img {
+    margin: auto 0px;
+    height: 50px;
+    margin-right: auto;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: auto 0px;
+    padding: 0px;
+}
+
+.menu li {
+    margin: 0px 10px;
+    padding: 0px;
+}
+
+.menu li a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    height: 70vh;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    padding-top: 20vh;
+}
+
+.title .btn {
+    border-style: solid; 
+    border-color: transparent;
+    background-color: rgba(28,142,68,1);
+    color: white;
+    padding: 20px 60px;
+    border-radius: 50px;
+    font-size: large;
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+
+.title .btn:active,
+.title .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-color: transparent;
+}
+
+.title #btn_trsp {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+
+
+.title #btn_trsp:active,
+.title #btn_trsp:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-color: transparent;
+}
+
+.cont {
+    background-color: white;
+    border-radius: 50px;
+    text-align: justify;
+    margin: 50px 150px;
+    padding: 50px;
+    font-size: 20px;
+    color: black;
+}
+
+.sobre {
+    display: flex;
+    
+}
+
+.sobre .text h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.sobre .text h2 {
+    font-size: 30px;
+}
+
+.imgs {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.imgs img {
+    height: 200px;
+    width: 200px;
+}
+
+.con1 {
+    padding: 0px;
+}
+
+.sec {
+    background-color: aquamarine;
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.con2 {
+    margin: 50px;
+}
