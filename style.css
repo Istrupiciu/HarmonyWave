@@ -79,7 +79,7 @@ body {
 .title .btn:hover {
     background-color: rgb(255, 255, 255);
     color: black;
-    border-color: transparent;
+    border-color: black;
 }
 
 .title #btn_trsp {
@@ -95,7 +95,7 @@ body {
 .title #btn_trsp:hover {
     background-color: rgb(255, 255, 255);
     color: black;
-    border-color: transparent;
+    border-color: black;
 }
 
 .cont {
