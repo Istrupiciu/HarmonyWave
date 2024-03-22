@@ -179,8 +179,8 @@ body {
     width: 16vw;
 }
 
-.sec .tel .img_text p{
-    text-align: center;    
+.sec .tel .img_text p {
+    text-align: center;
 }
 
 .sec .tel .cam {
@@ -195,33 +195,37 @@ body {
     margin-right: auto;
 }
 
-.con2 {
+.con1 .con2 {
     margin: 50px;
 }
 
-.con2 ul {
+.con1 .con2 ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.con2 ul li {
+.con1 .con2 ul li {
     list-style: none;
     padding: 10px;
     padding-left: 0px;
     border-radius: 50px;
 }
 
-.con3 {
+.con1 .con2 .con3 {
     display: flex;
 }
 
-.con3_1 {
+.con1 .con2 .con3 .con3_1 {
     text-align: left;
 }
 
-.con3 img {
+.con1 .con2 .con3 .con3_1 #green {
+    color: rgb(25, 120, 58);
+}
+
+.con1 .con2 .con3 img {
     margin-left: 50px;
     width: 600px;
     height: 400px;
