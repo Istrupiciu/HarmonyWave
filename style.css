@@ -7,11 +7,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
     background: rgb(24, 20, 19);
-    background: linear-gradient(160deg, rgba(24, 20, 19, 1) 30%, rgba(28, 142, 68, 1) 100%, rgba(28, 157, 74, 1) 100%);
+    background: linear-gradient(160deg, rgba(24, 20, 19, 1) 30%, rgba(51, 29, 193, 1));
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
 .menu {
@@ -25,6 +24,7 @@ body {
 .menu .logo {
     margin: auto 0px;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .menu img {
@@ -63,10 +63,10 @@ body {
     padding-top: 20vh;
 }
 
-.title .btn {
+.btn {
     border-style: solid;
     border-color: transparent;
-    background-color: rgba(28, 142, 68, 1);
+    background-color: rgba(51, 29, 193, 1);
     color: white;
     padding: 20px 60px;
     border-radius: 50px;
@@ -75,14 +75,35 @@ body {
     text-decoration: none;
 }
 
-.title .btn:active,
-.title .btn:hover {
+.btn1 {
+    font-size: 15px !important;
+    padding: 20px 30px;
+}
+
+#btn_login {
+    transition: cubic-bezier(0.075, 0.82, 1, 1) 300ms;
+}
+
+#btn_login:active,
+#btn_login:hover {
+    transform: scale(1.1);
+}
+
+.btn:active,
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgba(51, 29, 193, 1);
+    border-color: rgba(51, 29, 193, 1);
+}
+
+.btn1:active,
+.btn1:hover {
     background-color: rgb(255, 255, 255);
     color: black;
     border-color: black;
 }
 
-.title #btn_trsp {
+#btn_trsp {
     background-color: transparent;
     color: white;
     border-color: white;
@@ -91,26 +112,28 @@ body {
 }
 
 
-.title #btn_trsp:active,
-.title #btn_trsp:hover {
+#btn_trsp:active,
+#btn_trsp:hover {
     background-color: rgb(255, 255, 255);
     color: black;
-    border-color: black;
 }
 
 .cont {
-    background-color: white;
+    background-color: rgb(32, 32, 32);
     border-radius: 50px;
     text-align: justify;
     margin: 50px 150px;
     padding: 50px;
     font-size: 20px;
-    color: black;
+    color: white;
+}
+
+.cont1 {
+    margin: 50px 32vw;
 }
 
 .sobre {
     display: flex;
-
 }
 
 .sobre .text h1 {
@@ -123,6 +146,8 @@ body {
 }
 
 .imgs {
+    width: min-content;
+    height: min-content;
     margin: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -132,6 +157,11 @@ body {
     height: 200px;
     width: 200px;
     margin: 1px;
+    transition: cubic-bezier(0.075, 0.82, 1, 1) 300ms;
+}
+
+.sobre .imgs img:hover {
+    transform: scale(1.1);
 }
 
 .con1 {
@@ -141,7 +171,7 @@ body {
 .sec {
     display: flex;
     flex-direction: row-reverse;
-    background-color: rgb(25, 120, 58);
+    background: linear-gradient(0deg, rgb(32, 32, 32) 0%, rgba(51, 29, 193, 1) 100%, rgba(28, 157, 74, 1) 100%);
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     padding: 50px;
@@ -158,7 +188,7 @@ body {
     margin-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
-    width: 400px;
+    width: 100vw;
     height: 550px;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
@@ -226,7 +256,7 @@ body {
 }
 
 .con1 .con2 .con3 .con3_1 #green {
-    color: rgb(25, 120, 58);
+    color: rgba(51, 29, 193, 1);
 }
 
 .con1 .con2 .con3 img {
@@ -311,4 +341,100 @@ body {
 .ofertas #oferta #btn_clr {
     margin: auto;
     font-size: 10px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.login label {
+    margin: 20px 0px;
+}
+
+.login label input {
+    width: 25vw;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+.login div {
+    display: flex;
+}
+
+.login div span {
+    margin: auto 10px;
+}
+
+.login div .btn {
+    height: min-content;
+    width: 200px;
+}
+
+.login span {
+    margin: 30px;
+}
+
+.login span a {
+    text-decoration: none;
+    color: #c3c3c3;
+}
+
+.login span a:hover {
+    text-decoration: underline;
+}
+
+.switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: black;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked+.slider {
+    background-color: rgba(51, 29, 193, 1);
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
